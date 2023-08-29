@@ -29,6 +29,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, InputProps>(
           <BaseInput
             className="text-black pl-12"
             type="search"
+            data-testid="search-input"
             id="default-search"
             placeholder="Search Products"
             required

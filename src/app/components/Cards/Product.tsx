@@ -12,7 +12,10 @@ interface Props {
 export const ProductCard: FC<Props> = ({ item }) => {
   const { image, title, description } = item;
   return (
-    <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-8">
+    <div
+      data-testid="product-card"
+      className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-8"
+    >
       <a href="#">
         <div className="h-[320px] overflow-hidden">
           <Image

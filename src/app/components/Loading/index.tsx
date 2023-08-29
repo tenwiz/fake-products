@@ -2,7 +2,10 @@ import { FC } from "react";
 
 export const Spinner: FC = () => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center">
+    <div
+      data-testid="loading-spinner"
+      className="fixed inset-0 flex items-center justify-center"
+    >
       <div role="status">
         <svg
           aria-hidden="true"
